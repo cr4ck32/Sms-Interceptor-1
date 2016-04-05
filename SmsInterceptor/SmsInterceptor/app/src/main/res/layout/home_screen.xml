@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Your SMS App"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#3438ff" />
+    <Button
+        android:id="@+id/contacts_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact List"
+
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:id="@+id/compose_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compose Sms"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/camera_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eric.smsinterceptor.app" >
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.eric.smsinterceptor.app.LogInActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <receiver android:name=".SmsReceiver">
+            <intent-filter >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/app_name">
+            </activity>
+
+        <activity
+            android:name=".ComposeSms"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".ContactListActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".add_contact_activity"
+            android:label="@string/app_name">
+        </activity>
+    </application>
+
+</manifest>
